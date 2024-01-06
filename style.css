@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    color: black;
+    font-size: 45px;
+    font-weight: 800;
+}
+.text-oreng{
+    color: #FD6E0A;
+}
+nav >ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    color:#474747 ;
+}
+.primari-btn{
+    border-radius: 0.3125rem;
+    background: #FD6E0A;
+    font-size: .900rem;
+    border: none;
+    padding: 15px 35px;
+    color: white;
+    font-weight: 700;
+}
