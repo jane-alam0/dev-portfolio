@@ -39,13 +39,14 @@
   color: #757575;
   font-size: 1.125rem;
   font-weight: 400;
+  text-align: justify;
 }
 /* header section starts here */
 .header {
   background: #fff8f3;
   background-image: url("images/header_bg.png"), url("images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right , left top;
+  background-position: bottom right, left top;
   background-size: auto, 87px;
 }
 /* nav section starts here */
@@ -59,6 +60,12 @@ nav {
   color: black;
   font-size: 45px;
   font-weight: 800;
+}
+.nav-title1 {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: 800;
+  display: none;
 }
 .text-oreng {
   color: #fd6e0a;
@@ -121,7 +128,6 @@ main {
   margin-top: 30px;
 }
 .about-info {
-  text-align: center;
 }
 .about-info-container .about-info h4 {
   color: #757575;
@@ -140,71 +146,76 @@ main {
   display: flex;
   gap: 25px;
 }
-.work-item{
+.work-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   padding: 30px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
-main section{
+main section {
   margin-top: 150px;
 }
-.resume-container{
+.resume-container {
   display: flex;
   justify-content: space-around;
   gap: 30px;
 }
-.resume-container hr{
+.resume-container hr {
   width: 80%;
 }
-.resume-column{
+.resume-column {
   margin-top: 50px;
 }
-.resume-column-title{
+.resume-column-title {
   color: #474747;
-font-size: 1.875rem;
-font-weight: 700;
+  font-size: 1.875rem;
+  font-weight: 700;
 }
-.resume-shop{
-  color:  #757575;
-font-size: 1.25rem;
-font-weight: 600;
-margin: 10px 0;
+.resume-shop {
+  color: #757575;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 10px 0;
 }
-.resume-item-title{
+.resume-item-title {
   color: #474747;
   font-size: 1.5625rem;
   font-weight: 700;
 }
-.resume-item{
-margin: 23px 0;
+.resume-item {
+  margin: 23px 0;
 }
-.download-cv{
+.download-cv {
   text-align: center;
   margin-top: 50px;
 }
-footer{
+footer {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   gap: 100px;
-  background: #FFF8F3;
+  background: #fff8f3;
   margin-top: 100px;
   padding: 130px 200px;
 }
-.footer-column{
+.footer-column {
   width: 50%;
   padding: 30px;
 }
-.footer-column-title{
-  color:  #181818;
+.footer-column-title {
+  color: #181818;
   margin: 30px 0;
-text-align: left;
-font-size: 2.1875rem;
-font-weight: 700;
+  text-align: left;
+  font-size: 2.1875rem;
+  font-weight: 700;
 }
-.contact input[type="text"], .contact input[type="email"] ,textarea{
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
   display: block;
-  margin-bottom:25px ;
+  margin-bottom: 25px;
   padding: 22px 35px;
   color: #757575;
   border-radius: 5px;
@@ -212,9 +223,73 @@ font-weight: 700;
   width: 100%;
   resize: none;
 }
-.footer-icon a{
+.footer-icon a {
   margin-right: 20px;
 }
-.footer-icon{
+.footer-icon {
   margin-top: 25px;
+}
+
+/* mobail screen  */
+@media screen and (max-width: 576px) {
+  .work-item-list,
+  nav,
+  nav > ul,
+  .banner,
+  .about-info-container,
+  .resume-container {
+    flex-direction: column;
+  }
+  .header {
+    background-image: none;
+  }
+  nav {
+    margin: 10px;
+  }
+  nav li {
+    margin: 20px none;
+  }
+  .skill-dsk {
+    padding: 25px 30px;
+  }
+  .resume-column-title {
+    text-align: center;
+  }
+  .resume-item {
+    padding: 10px 30px;
+  }
+  footer {
+    padding: 10px;
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+  .footer-column {
+    width: 100%;
+    padding: 10px;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  textarea {
+    width: 80%;
+  }
+  .about {
+    padding: 30px;
+  }
+  .about-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .nav-title {
+    display: none;
+  }
+  .nav-title1 {
+    display: block;
+  }
+  .banner .profile-pik {
+    margin-top: 30px;
+    width: 100%;
+}
+  nav li {
+    margin: 10px;
+}
 }
